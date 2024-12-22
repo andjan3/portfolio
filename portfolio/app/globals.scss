@@ -1,4 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+
+.font-logo{ 
+    font-family: "Sacramento", serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+.nav-link{
+    text-shadow: -1px -1px 0 #30343f, 1px -1px 0 #30343f, -1px 1px 0 #30343f, 1px 1px 0 #30343f;
+    color: #FAFAFF;
+}
