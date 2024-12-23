@@ -54,16 +54,32 @@ export const NavBar = () => {
           </div>
 
           <div className="flex flex-col pl-8 lg:pl-16 pt-16 gap-3">
-            <Link className="text-[24px] lg:text-[40px] text-white" href={"#"}>
+            <Link
+              className="text-[24px] lg:text-[40px] text-white"
+              href={"#"}
+              onClick={handleCloseClick}
+            >
               Home
             </Link>
-            <Link className="text-[24px] lg:text-[40px] text-white" href={"#"}>
+            <Link
+              className="text-[24px] lg:text-[40px] text-white"
+              href={"#"}
+              onClick={handleCloseClick}
+            >
               About
             </Link>
-            <Link className="text-[24px] lg:text-[40px] text-white" href={"#"}>
+            <Link
+              className="text-[24px] lg:text-[40px] text-white"
+              href={"#"}
+              onClick={handleCloseClick}
+            >
               Projects
             </Link>
-            <Link className="text-[24px] lg:text-[40px] text-white" href={"#"}>
+            <Link
+              className="text-[24px] lg:text-[40px] text-white"
+              href={"#footer"}
+              onClick={handleCloseClick}
+            >
               Contact
             </Link>
           </div>
