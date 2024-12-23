@@ -1,12 +1,13 @@
 "use client";
 
-import useStore from "./lib/store";
+import useStore from "../lib/store";
 import Link from "next/link";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithub } from "react-icons/tb";
+import { Socials } from "../lib/socials/socials";
 
 export const NavBar = () => {
   const { open, setIsOpenMenu, rotateHamburger, setRotateHamburger } =
@@ -72,13 +73,7 @@ export const NavBar = () => {
           </div>
 
           <div className="flex px-8 lg:px-16 gap-5 items-center pt-8">
-            <Link href={"#"}>
-              <FaLinkedinIn fontSize={30} color="white" />
-            </Link>
-
-            <Link href={"#"}>
-              <TbBrandGithub fontSize={30} color="white" />
-            </Link>
+            <Socials />
           </div>
         </nav>
       </div>
