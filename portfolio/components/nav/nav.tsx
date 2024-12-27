@@ -5,8 +5,6 @@ import Link from "next/link";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
-import { FaLinkedinIn } from "react-icons/fa";
-import { TbBrandGithub } from "react-icons/tb";
 import { Socials } from "../lib/socials/socials";
 
 export const NavBar = () => {
@@ -70,7 +68,7 @@ export const NavBar = () => {
             </Link>
             <Link
               className="text-[24px] lg:text-[40px] text-white"
-              href={"#"}
+              href={"#projects"}
               onClick={handleCloseClick}
             >
               Projects
