@@ -98,6 +98,12 @@
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 500;
   }
+
+  .big-heading-hero{
+    font-size: 60px;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 700;
+  }
   .font-paragraph{
     font-family: 'Sofia Pro', sans-serif;
     font-style: italic;
@@ -111,7 +117,19 @@
     font-size: 20px;
   }
 
+  .font-button{
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
 
+  /* .outline-text {
+    font-family: 'Sofia Pro', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px black; 
+    font-size: 60px;
+   
+  } */
 .clip-path-custom {
   position: absolute;
   top: 0;
@@ -136,3 +154,16 @@
    
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start- och slutposition */
+  }
+  50% {
+    transform: translateY(-10px); /* Pilen rör sig uppåt */
+  }
+}
+
+.bounce {
+  display: inline-block; /* För säker positionering */
+  animation: bounce 0.8s ease infinite; /* Animeringsegenskaper */
+}

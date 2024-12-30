@@ -31,15 +31,17 @@ export const Project = ({
     <>
       <Link href={href}>
         {img ? (
-          <div className="relative w-[450px] h-[450px] ">
+          <div className="relative w-[450px] h-[450px] group">
             <Image src={imagePath} layout="fill" objectFit="cover" alt="" />
-            <div className="absolute top-80 text-white p-4">
+            <div className="absolute inset-0 bg-[#25364f] opacity-0 group-hover:opacity-30 z-10 transition-opacity duration-300"></div>
+            <div className="absolute top-80 text-white p-4 z-20">
               <h1 className="text-3xl font-heading">{heading}</h1>
               <p className="pt-2 font-paragraph">{description}</p>
             </div>
           </div>
         ) : (
-          <div className="relative w-[450px] h-[450px]">
+          <div className="relative w-[450px] h-[450px] group">
+            <div className="absolute inset-0 bg-[#25364f] opacity-0 group-hover:opacity-30 z-10 transition-opacity duration-300"></div>
             <video
               autoPlay
               muted
@@ -48,7 +50,7 @@ export const Project = ({
               className="w-full h-full object-cover"
               src={videoPath}
             ></video>
-            <div className="absolute top-80 text-white p-4">
+            <div className="absolute top-80 text-white p-4 z-20">
               <h1 className="text-3xl font-heading">{heading}</h1>
               <p className="pt-2 font-paragraph">{description}</p>
             </div>
