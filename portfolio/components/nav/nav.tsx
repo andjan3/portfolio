@@ -21,9 +21,9 @@ export const NavBar = () => {
 
   return (
     <header
-      className={`fixed px-5 top-0 flex justify-between items-center w-full py-5 z-50`}
+      className={`fixed px-5 top-0 flex justify-between items-center w-full py-5 z-50 mt-4`}
     >
-      <span className="font-logo text-3xl">Andréa Jandergren.</span>
+      <span className="font-logo text-3xl">AJ.</span>
       <div className="flex justify-end absolute right-5 top-2">
         <RxHamburgerMenu
           fontSize={50}

@@ -71,7 +71,7 @@ export default KasiPage;
 import { ProjectHero } from "../../components/projectHero";
 import kasi from "../../app/assets/kasi-desktop.png";
 import kasiBuilding from "../../app/assets/kasi_buildings.png";
-import group from "../../app/assets/group_ipad_mobile.png";
+import group from "../../app/assets/kasiiii.png";
 import Image from "next/image";
 import { SkillsList } from "../../components/lib/projects/skills";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -126,19 +126,15 @@ const KasiPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center gap-20">
-        <div className="w-[35%]">
-          <Image
-            src={group}
-            alt=""
-            className="w-full h-full object-cover p-2"
-          />
+      <div className="flex w-full justify-evenly p-8 ">
+        <div className="w-[45%] ">
+          <Image src={group} alt="" className="w-full h-full object-cover " />
         </div>
-        <div className="w-[35%]">
+        <div className="w-[45%]">
           <Image
             src={kasiBuilding}
             alt="Kasi Building"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-[40px]"
           />
         </div>
       </div>

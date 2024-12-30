@@ -1,8 +1,8 @@
 import { ProjectHero } from "../../components/projectHero";
 import premierPadel from "../../app/assets/padel.png";
 import kasiBuilding from "../../app/assets/kasi_buildings.png";
-import group from "../../app/assets/padel_group.png";
-import premierImg from "../../app/assets/premier_hero.webp";
+import group from "../../app/assets/padel-mobile.png";
+import premierImg from "../../app/assets/padeel.webp";
 import Image from "next/image";
 import { SkillsList } from "../../components/lib/projects/skills";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -54,19 +54,15 @@ const KasiPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-evenly gap-10">
-        <div className="w-[35%]">
-          <Image
-            src={group}
-            alt=""
-            className="w-full h-full object-cover p-2"
-          />
+      <div className="flex w-full justify-evenly p-8 ">
+        <div className="w-[45%] ">
+          <Image src={group} alt="" className="w-full h-full object-cover " />
         </div>
-        <div className="w-[35%]">
+        <div className="w-[45%]">
           <Image
             src={premierImg}
             alt="Kasi Building"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-[40px]"
           />
         </div>
       </div>
