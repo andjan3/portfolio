@@ -44,8 +44,8 @@ export const NavBar = () => {
             <IoCloseOutline
               fontSize={70}
               color="white"
-              className={`cursor-pointer transform transition-all duration-1000 ease-in-out  ${
-                open ? "rotate-[360deg]" : "rotate-0"
+              className={`cursor-pointer transform transition-all duration-500 ease-in  ${
+                open ? "rotate-[180deg]" : "rotate-0"
               }`}
               onClick={handleCloseClick}
             />

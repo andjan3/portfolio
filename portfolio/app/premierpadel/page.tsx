@@ -1,6 +1,5 @@
 import { ProjectHero } from "../../components/projectHero";
 import premierPadel from "../../app/assets/padel.png";
-import kasiBuilding from "../../app/assets/kasi_buildings.png";
 import group from "../../app/assets/padel-mobile.png";
 import premierImg from "../../app/assets/padeel.webp";
 import Image from "next/image";
@@ -8,7 +7,7 @@ import { SkillsList } from "../../components/lib/projects/skills";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Link from "next/link";
 
-const KasiPage = () => {
+const PremierPadelPage = () => {
   return (
     <div>
       <div className="h-[100vh] flex flex-col justify-center">
@@ -70,4 +69,4 @@ const KasiPage = () => {
   );
 };
 
-export default KasiPage;
+export default PremierPadelPage;

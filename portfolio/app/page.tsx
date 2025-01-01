@@ -4,13 +4,16 @@ import kasi from "../app/assets/kasi_hero.jpg";
 import pl from "../app/assets/Mask Group 6.png";
 import { Project } from "@/components/lib/projects/projects";
 import { Hero } from "../components/hero";
+import { About } from "@/components/about";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <main className="flex min-h-screen items-center justify-center">
-        <section className=" flex ">
+      <About />
+      <main className="min-h-screen w-[100vw] h-[100vh] p-16 ">
+        <h3 className="font-text pb-8">PROJECTS</h3>
+        <section className=" flex items-center">
           <Project
             href={"/kasi"}
             img={true}
