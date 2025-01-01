@@ -31,7 +31,7 @@ export const Project = ({
     <>
       <Link href={href}>
         {img ? (
-          <div className="relative w-[450px] h-[450px] group">
+          <div className="relative w-[475px] h-[475px] group">
             <Image src={imagePath} layout="fill" objectFit="cover" alt="" />
             <div className="absolute inset-0 bg-[#25364f] opacity-0 group-hover:opacity-30 z-10 transition-opacity duration-300"></div>
             <div className="absolute top-80 text-white p-4 z-20">
@@ -40,7 +40,7 @@ export const Project = ({
             </div>
           </div>
         ) : (
-          <div className="relative w-[450px] h-[450px] group">
+          <div className="relative w-[475px] h-[475px] group">
             <div className="absolute inset-0 bg-[#25364f] opacity-0 group-hover:opacity-30 z-10 transition-opacity duration-300"></div>
             <video
               autoPlay
