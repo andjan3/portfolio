@@ -45,10 +45,9 @@ export const Form = () => {
   };
 
   return (
-    <div id="contact-form" className="p-[2rem] md:p-[0rem]">
+    <div id="contact-form" className="p-[1rem] md:p-[2rem]">
       {isModalOpen && <PopUpModal />}
-      <div className=" ">
-        <div className=" "></div>
+      <div>
         <form className="lg:ml-[-12rem]" onSubmit={handleSubmit}>
           <div className="flex items-center lg:w-[37.5vw] flex-col mb-6">
             <input

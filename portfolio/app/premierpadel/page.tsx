@@ -1,7 +1,7 @@
 import { ProjectHero } from "../../components/projectHero";
-import premierPadel from "../../app/assets/padel.png";
-import group from "../../app/assets/padel-mobile.png";
-import premierImg from "../../app/assets/padeel.webp";
+import premierPadel from "../../app/assets/img/padel.png";
+import group from "../../app/assets/img/padel-mobile.png";
+import premierImg from "../../app/assets/img/padeel.webp";
 import Image from "next/image";
 import { SkillsList } from "../../components/lib/projects/skills";
 import { IoIosArrowRoundForward } from "react-icons/io";

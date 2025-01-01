@@ -107,6 +107,15 @@ body{
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 700;
   }
+
+  .heading-about, .project-heading{
+    font-size:60px;
+    line-height: 4rem;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .font-paragraph{
     font-family: 'Sofia Pro', sans-serif;
     font-style: italic;
@@ -175,4 +184,13 @@ body{
 .bounce {
   display: inline-block; /* För säker positionering */
   animation: bounce 0.8s ease infinite; /* Animeringsegenskaper */
+}
+
+@media screen and (min-width: 1024px) {
+  .heading-about, .project-heading {
+    font-size: 100px;
+    line-height: 6rem;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 500;
+  }
 }
