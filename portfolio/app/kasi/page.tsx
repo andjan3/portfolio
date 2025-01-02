@@ -18,12 +18,12 @@ const KasiPage = () => {
         </div>
       </div>
 
-      <div className="block lg:flex p-6 lg:p-10 lg:h-[100vh]">
-        <div className="flex flex-row-reverse gap-6 flex-nowrap items-center justify-end lg:block w-[100%] lg:w-1/2">
+      <div className="block lg:flex px-6 lg:px-10 lg:h-[100vh]">
+        <div className="flex flex-col flex-nowrap justify-end lg:block w-[100%] lg:w-1/2">
           <h2 className="project-heading">Kasi AB</h2>
-          <p>Webb</p>
+          <p className="pb-4 lg:pb-0">Webb</p>
         </div>
-        <div className="w-[100%] lg:w-1/2 flex flex-col gap-4">
+        <div className=" lg:w-1/2 flex flex-col gap-4">
           <p className="font-text ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
             aliquam reprehenderit consequuntur iure repellendus repellat
@@ -56,15 +56,15 @@ const KasiPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-evenly p-8 ">
-        <div className="w-[45%] ">
+      <div className="flex w-full gap-6 lg:gap-0 flex-col lg:flex-row lg:justify-evenly p-8 ">
+        <div className="lg:w-[45%] ">
           <Image src={group} alt="" className="w-full h-full object-cover " />
         </div>
-        <div className="w-[45%]">
+        <div className="lg:w-[45%]">
           <Image
             src={kasiBuilding}
             alt="Kasi Building"
-            className="w-full h-full object-cover rounded-[40px]"
+            className="w-full h-full object-cover rounded-[20px] lg:rounded-[40px]"
           />
         </div>
       </div>

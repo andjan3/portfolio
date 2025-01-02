@@ -22,9 +22,10 @@ export const NavBar = () => {
   };
 
   const handleScroll = () => {
+    const scrollThreshold = 10;
     if (typeof window !== "undefined") {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
+      if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
         setScrollingUp(false);
       } else {
         setScrollingUp(true);
@@ -34,11 +35,9 @@ export const NavBar = () => {
   };
 
   useEffect(() => {
-    // Adding event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      // Clean up the event listener
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
@@ -49,7 +48,7 @@ export const NavBar = () => {
         scrollingUp ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <Link href={"#home"}>
+      <Link href="/#home" passHref>
         <span className="font-logo text-3xl">AJ.</span>
       </Link>
       <div className="flex justify-end absolute right-5 top-2">

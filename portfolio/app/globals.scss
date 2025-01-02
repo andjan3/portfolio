@@ -108,13 +108,22 @@ body{
     font-weight: 700;
   }
 
-  .heading-about, .project-heading{
+  .heading-about{
     font-size:60px;
     line-height: 4rem;
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 500;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .project-heading{
+    font-size:60px;
+    line-height: 4rem;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 500;
+    padding-top: 1.5rem;
+   
   }
   .font-paragraph{
     font-family: 'Sofia Pro', sans-serif;
@@ -192,5 +201,10 @@ body{
     line-height: 6rem;
     font-family: 'Sofia Pro', sans-serif;
     font-weight: 500;
+  }
+
+  .project-heading{
+    padding-top: 0rem;
+   
   }
 }
