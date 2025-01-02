@@ -1,13 +1,13 @@
 import Image from "next/image";
-import aboutImg from "../app/assets/about.jpg";
+import aboutImg from "../app/assets/img/about.jpg";
 
 export const About = () => {
   return (
-    <section className="w-[100vw] p-16">
+    <section id="about" className="w-[100vw] p-6 lg:p-16">
       <h3 className="font-text">ABOUT</h3>
       <div className="flex justify-between">
-        <div className="w-[50%]">
-          <h3 className="big-heading mb-6 mt-6 ">ALWAYS CURIOUS.</h3>
+        <div className="w-[100%] lg:w-[50%]">
+          <h3 className="heading-about lg:mb-6 lg:mt-6 ">ALWAYS CURIOUS.</h3>
           <div className="flex flew-col flex-wrap gap-4">
             <h3 className="text-[24px] bold">
               A person with a strong interest in usability and an
@@ -36,9 +36,13 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <Image src={aboutImg} alt="" className="w-[40%] h-[500px]" />
+        <Image
+          src={aboutImg}
+          alt=""
+          className="w-[40%] h-[500px] hidden lg:flex"
+        />
       </div>
-      <hr className="w-[5%] border-t-2 border-gray-400 mt-10"></hr>
+      <hr className="w-[25%] lg:w-[5%] border-t-2 border-gray-400 mt-10"></hr>
     </section>
   );
 };

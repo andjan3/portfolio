@@ -1,8 +1,8 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import useStore from "../lib/store";
 import Link from "next/link";
-
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { Socials } from "../lib/socials/socials";
@@ -10,6 +10,8 @@ import { Socials } from "../lib/socials/socials";
 export const NavBar = () => {
   const { open, setIsOpenMenu, rotateHamburger, setRotateHamburger } =
     useStore();
+  const [scrollingUp, setScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleCloseClick = () => {
     setIsOpenMenu(false);
@@ -19,11 +21,36 @@ export const NavBar = () => {
     }, 500);
   };
 
+  const handleScroll = () => {
+    const scrollThreshold = 10;
+    if (typeof window !== "undefined") {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
+        setScrollingUp(false);
+      } else {
+        setScrollingUp(true);
+      }
+      setLastScrollY(currentScrollY);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <header
-      className={`fixed px-5 top-0 flex justify-between items-center w-full py-5 z-50 mt-4`}
+      className={`fixed px-5 top-0 flex justify-between items-center w-full py-5 z-50 bg-white transition-all duration-300 ${
+        scrollingUp ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
-      <span className="font-logo text-3xl">AJ.</span>
+      <Link href="/#home" passHref>
+        <span className="font-logo text-3xl">AJ.</span>
+      </Link>
       <div className="flex justify-end absolute right-5 top-2">
         <RxHamburgerMenu
           fontSize={50}
@@ -54,14 +81,14 @@ export const NavBar = () => {
           <div className="flex flex-col pl-8 lg:pl-16 pt-16 gap-3">
             <Link
               className="text-[24px] lg:text-[40px] text-white"
-              href={"#"}
+              href={"#home"}
               onClick={handleCloseClick}
             >
               Home
             </Link>
             <Link
               className="text-[24px] lg:text-[40px] text-white"
-              href={"#"}
+              href={"#about"}
               onClick={handleCloseClick}
             >
               About

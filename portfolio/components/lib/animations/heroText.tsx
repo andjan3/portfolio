@@ -2,12 +2,23 @@ import { motion } from "framer-motion";
 
 export const AnimatedHeroText = () => {
   const textContent = [
-    { text: "Hi I am", className: "font-text" },
-    { text: "Andréa Jandergren", className: "text-[#FF8233] font-text" },
-    { text: "Front end developer", className: "big-heading-hero" },
+    {
+      text: "Hi I am",
+      className: "font-text  lg:mt-0 text-center lg:text-start",
+    },
+    {
+      text: "Andréa Jandergren",
+      className:
+        "text-[#FF8233] font-text mb-4 lg:mt-0 lg:mb-0 text-center lg:text-start",
+    },
+    {
+      text: "Front end developer",
+      className:
+        "big-heading-hero !leading-[60px] lg:!leading-[100px] text-center lg:text-start",
+    },
     {
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nemo fugit est deserunt, velit alias voluptas, libero explicabo repellendus sunt excepturi. Esse at labore non?",
-      className: "",
+      className: "mt-4 mb-4 lg:mt-0 lg:mb-0 text-center lg:text-start",
     },
   ];
 
@@ -16,7 +27,7 @@ export const AnimatedHeroText = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="w-[100%] flex flex-col"
+      className="w-[100%]  flex flex-col"
     >
       {textContent.map((item, index) => (
         <motion.p
